@@ -1,0 +1,31 @@
+{
+    "name": "foghorn-api",
+    "version": "0.0.1",
+    "description": "API for the Foghorn mobile app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "tsc": "./node_modules/.bin/tsc -w -p ./tsconfig.json",
+        "test": "./node_modules/.bin/mocha -w --require babel-register -R landing test/**/*.spec.js",
+        "test-karma": "NODE_ENV=test ./node_modules/.bin/karma start ./node_modules/io8-common-tooling/karma.conf.js",
+        "build": "NODE_ENV=local ./node_modules/.bin/webpack --config ./node_modules/io8-common-tooling/webpack/webpack.config.js"
+    },
+    "author": "Gerry Branch",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+        "arangojs": "^6.4.0",
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "inversify": "^4.13.0",
+        "inversify-express-utils": "^6.1.0",
+        "lodash": "^4.17.10",
+        "reflect-metadata": "^0.1.12"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.17.0",
+        "@types/express": "^4.16.0",
+        "@types/node": "^10.5.2",
+        "typescript": "^2.9.2"
+    }
+}

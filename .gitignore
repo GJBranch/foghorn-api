@@ -1,0 +1,10 @@
+.vscode
+node_modules
+npm-debug.log
+dist
+.DS_Store
+*.js.map
+src/**/*.js
+test/**/*.spec.js
+test/reports
+package-lock.json
